@@ -1,5 +1,5 @@
 
-
+ 
 document.getElementById('mainForm').addEventListener("submit",function(event){
   event.preventDefault();
     let name = event.target.name.value;
@@ -7,8 +7,13 @@ document.getElementById('mainForm').addEventListener("submit",function(event){
     
     addItem(name, amount);
     total();
-    event.target.name.innerText = "";
+    clear();
 });
+
+function clear(){
+  document.querySelectorAll('input')[0].value = "";
+  document.querySelectorAll('input')[1].value = "";
+}
 
 document.getElementsByClassName('trashcan');
 
