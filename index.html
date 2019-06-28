@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
+  <title>Document</title>
+</head>
+<body>
+    <header>
+      <div id="logoDiv">
+          <img class = 'piggy' src="assets/piggy_bank.svg" alt="">
+        
+        <h1 class="logo Roboto">Budget Builder</h1>
+      </div>
+      <div id="budgetDiv">
+        <h2>Budget Total:  </h2><span id='total'>$0</span>
+      </div>
+    </header>
+    
+    <section id="mainDiv">
+      <div id="monthlyDiv">
+        <h3 class="listTitle Righteous">Monthly Expenses</h3>
+        <div id="listDiv">
+          <ul>
+            <li class="listItem"><span class="itemTitle">Groceries</span> <span class="itemPrice">$59</span> <span><img src="assets/trash_can.svg" alt=""></i></span></li>
+          </ul>
+        </div>
+      </div>
+      <div id="addBillDiv">
+      <h3 class="addBillTitle Righteous">Add Bill</h3>
+       <form action="" id="mainForm">
+          <div>
+          <label for="name">Name</label>  
+          <input type="text" name="name"><br>
+        </div>
+        <div>
+          <label for="amount">Amount</label>  
+          <input type="text" name="amount">
+        </div>
+        <div>
+              <button class="Righteous">Add</button>
+        </div>
+          
+       </form>
+      </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;
+ */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color:#424249;
+}
+
+ body { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .Righteous{
+
+    font-family: 'Righteous', cursive;
+  }
+
+  header{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #424249;
+    
+
+  }
+
+  .piggy{
+    font-size: 10vh;
+    color: #54D2E5;
+    padding: 5%;
+  }
+
+  #logoDiv{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  .logo{
+    font-size: 50px;
+    color: white;
+    font-family: 'Righteous', cursive;
+  }
+
+  #budgetDiv{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 25px; 
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #budgetDiv h2{
+    color: white;
+  }
+
+  #total{
+    font-size:40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+/* Header over */
+
+/* Main */
+#mainDiv{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px;
+  width: 100%;  
+}
+
+#monthlyDiv{
+height: 30vH;
+width: 35%;
+border:1px black solid;
+background-color: #EFE8E1; 
+
+}
+
+#addBillDiv{
+  height: 45vH;
+  width: 35%;
+  border:1px black solid;
+  background-color: #54D2E5; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;;
+}
+#addBillDiv h3{
+  padding: 20px;
+  font-size:35px;
+}
+
+/* list  */
+
+.listTitle{
+  padding: 20px;
+  font-size:35px;
+}
+
+#listDiv ul li{
+padding: 20px;
+}
+.listTitle{
+  padding: 10px;
+  font-family: 'Righteous', cursive;
+  
+}
+ .listItem{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   font-size: 25px;
+ }
+
+ .itemTitle{
+   font-size: 25px;
+   
+   padding-right: 10px;
+ }
+
+ .itemPrice{
+  flex-grow:1;
+ }
+
+ .trashcan{
+   flex-grow:1;
+   font-size: 30px;
+  color: #54D2E5; 
+  align-self: flex-end;
+ }
+
+/* Form */
+
+#mainForm{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content:center;
+  
+}
+
+
+#mainForm div{
+  
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+#mainForm label{
+  width: 30%;
+  height: 35px;
+  text-align: left;
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+#mainForm input{
+  width: 60%;
+  height: 35px;
+}
+#mainForm button{
+  width: 70%;
+  height: 45px;
+  background-color: #424249;
+  color: white;
+  font-size: 20px;
+  
+
+}
+
+
