@@ -16,42 +16,41 @@
 <body>
     <header>
       <div id="logoDiv">
-          <img class = 'piggy' src="assets/piggy_bank.svg" alt="">
-        
+          <img class = 'piggy' src="assets/piggy_bank.svg" alt="">      
         <h1 class="logo Roboto">Budget Builder</h1>
       </div>
       <div id="budgetDiv">
-        <h2>Budget Total:  </h2><span id='total'>$0</span>
+        <h2>Budget Total:  </h2><span id='total'>0</span>
       </div>
     </header>
-    
     <section id="mainDiv">
       <div id="monthlyDiv">
         <h3 class="listTitle Righteous">Monthly Expenses</h3>
         <div id="listDiv">
-          <ul>
-            <li class="listItem"><span class="itemTitle">Groceries</span> <span class="itemPrice">$59</span> <span><img src="assets/trash_can.svg" alt=""></i></span></li>
+          <ul id="ulList">
+            
           </ul>
         </div>
       </div>
-      <div id="addBillDiv">
-      <h3 class="addBillTitle Righteous">Add Bill</h3>
-       <form action="" id="mainForm">
-          <div>
-          <label for="name">Name</label>  
-          <input type="text" name="name"><br>
+  
+      <div id ='bill2Div'>
+        <div id="bill2HeaderDiv">
+            <h3 class="addBillTitle Righteous">Add Bill</h3>
         </div>
-        <div>
-          <label for="amount">Amount</label>  
-          <input type="text" name="amount">
-        </div>
-        <div>
-              <button class="Righteous">Add</button>
-        </div>
-          
-       </form>
+            <form id="mainForm" action="">
+              <div id="inputDiv">
+                <label  for="name">Name</label>
+                <input id="name" type="text" required>
+              </div>
+              <div id="inputDiv">    
+                  <label for="name">Amount</label>
+                  <input id="amount" type="text" required>
+                </div>
+                <button class="Righteous">Add</button>
+            </form>
       </div>
 
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
