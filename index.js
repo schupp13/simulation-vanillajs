@@ -1,5 +1,4 @@
 
- 
 document.getElementById('mainForm').addEventListener("submit",function(event){
   event.preventDefault();
     let name = event.target.name.value;
@@ -19,23 +18,42 @@ document.getElementsByClassName('trashcan');
 
 
 function total(){
-let total = parseInt(document.getElementById('total').innerText); 
+
 let list = document.querySelectorAll('.itemPrice');
-console.log(parseInt(list[0].innerText));
 let  looptotal = 0;
 for(let i = 0; i < list.length; i++){
   looptotal += parseFloat(list[i].innerText);
-  console.log(looptotal);
 }
-document.getElementById('total').innerText =looptotal;
+document.getElementById('total').innerText = looptotal;
 }
 
 function addItem(name, amount){
- let ulList =  document.getElementById('ulList');
-let newLi = document.createElement('li');
-newLi.className = "listItem";
-newLi.innerHTML = `<span class="itemTitle">${name}</span> <span id="trash" class="itemPrice">${amount}</span> <a><span class="trashcan"></a></span>`;
-ulList.appendChild(newLi);
+  let ulList =  document.getElementById('ulList');
+  let newLi = document.createElement('li');
+  newLi.className = "listItem";
+  let itemTitle = document.createElement('span');
+  itemTitle.className = "itemTitle";
+  itemTitle.innerHTML = `${name}`;
+  let money = document.createElement('span');
+  money.className = "money";
+  money.innerText = "$";
+  let itemPrice = document.createElement('span');
+  itemPrice.className = "itemPrice";
+  itemPrice.innerHTML = `${amount}`;
+  let trashcan = document.createElement('span');
+  trashcan.className = "trashcan";
+  let a = document.createElement('a');
+  a.appendChild(trashcan);
+  a.addEventListener("click", function(e) {
+    newLi.parentNode.removeChild(newLi);
+    total();
+  });
+  newLi.appendChild(itemTitle);
+  newLi.appendChild(money);
+  newLi.appendChild(itemPrice);
+ 
+  newLi.appendChild(a);
+  ulList.appendChild(newLi);
 }
 
 

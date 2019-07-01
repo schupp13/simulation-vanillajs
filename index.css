@@ -73,7 +73,13 @@ font-family: 'Roboto', sans-serif;
 
   #total{
     font-size:40px;
-   
+    
+    font-family: 'Roboto', sans-serif;
+    color: #fffDFC;
+  }
+  .dollar{
+    font-size:40px;
+    padding-left: 20px;
     padding-left: 20px;
     font-family: 'Roboto', sans-serif;
     color: #fffDFC;
@@ -122,7 +128,12 @@ padding: 20px;
  }
 
  .itemPrice{
+  
   flex-grow:1;
+ }
+
+ .money{
+   padding-left: 60px;
  }
 
  .trashcan{
